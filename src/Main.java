@@ -21,10 +21,6 @@ public class Main {
                 continue;
             }
             timeWeHave -= spot.time;
-            if(timeWeHave < 0){
-                System.out.println("Времени не осталось, уезжаем.");
-                break;
-            }
             points += spot.importance;
             System.out.println(spot.name+"\n\t\tПлотность: "+spot.getDensity()+"\n\t\tСтоимость по времени: "+spot.time+" ч\n\t\t\tОсталось времени: "+timeWeHave+" ч\n\t\t\tВсего очков важности: "+points+"\n");
         }
